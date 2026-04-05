@@ -36,23 +36,29 @@ Run `sharpc -c` to create a `.sharpc.json` in the current directory:
 
 Without a config file, defaults to webp at quality 80 with no resize.
 
+## Output
+
+```
+  Processing 4 images → webp (q80)
+  hero-1.png → hero-1.webp  62kb  (96% smaller)
+  hero-2.png → hero-2.webp  162kb  (92% smaller)
+  Done!
+```
+
 ## Formats
 
 webp, jpg, png, avif
 
 ## Fit strategies
 
-- `inside` — fit within dimensions, preserve aspect ratio
-- `cover` — fill dimensions, crop excess
-- `contain` — fit within, letterbox if needed
-- `outside` — cover minimum dimension
-- `fill` — exact dimensions, may distort
+| Strategy | Behavior |
+|----------|----------|
+| `inside` | fit within dimensions, preserve aspect ratio |
+| `cover` | fill dimensions, crop excess |
+| `contain` | fit within, letterbox if needed |
+| `outside` | cover minimum dimension |
+| `fill` | exact dimensions, may distort |
 
-## Filename normalization
+## License
 
-Output filenames are cleaned automatically:
-
-```
-My Photo (2024).jpg → my-photo-2024.webp
-Product_Image #123!.png → product-image-123.webp
-```
+MIT
