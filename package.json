@@ -10,7 +10,7 @@
   },
   "type": "module",
   "bin": {
-    "sharpc": "./src/cli.js"
+    "sharpc": "src/cli.js"
   },
   "files": [
     "src"
