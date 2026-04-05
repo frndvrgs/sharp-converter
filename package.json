@@ -1,0 +1,21 @@
+{
+  "name": "sharp-converter",
+  "version": "2.0.0",
+  "description": "Batch image conversion and compression CLI powered by Sharp",
+  "license": "MIT",
+  "author": "frndvrgs (https://github.com/frndvrgs)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frndvrgs/sharp-converter.git"
+  },
+  "type": "module",
+  "bin": {
+    "sharpc": "./src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
