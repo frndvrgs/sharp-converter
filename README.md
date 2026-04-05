@@ -1,5 +1,7 @@
 # sharp-converter
 
+[![npm](https://img.shields.io/npm/v/sharp-converter)](https://www.npmjs.com/package/sharp-converter)
+
 Batch image conversion and compression CLI powered by [Sharp](https://sharp.pixelplumbing.com/).
 
 ## Install
