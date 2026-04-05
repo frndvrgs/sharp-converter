@@ -6,7 +6,7 @@
   "author": "frndvrgs (https://github.com/frndvrgs)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frndvrgs/sharp-converter.git"
+    "url": "git+https://github.com/frndvrgs/sharp-converter.git"
   },
   "type": "module",
   "bin": {
