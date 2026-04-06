@@ -1,11 +1,10 @@
-import { loadConfig, saveConfig, CONFIG_FILE } from "./config.js"
+import { loadConfig, saveConfig } from "./config.js"
 import { ask, close, confirm, heading, info, select, success } from "./prompt.js"
 
-export async function configure() {
+export async function configure({ forceLocal = false } = {}) {
   const config = await loadConfig()
 
   heading("Sharp Converter — Configuration")
-  info(`Settings will be saved to ${CONFIG_FILE}\n`)
 
   config.format = await select("Output format", ["webp", "jpg", "png", "avif"], config.format)
   config.quality = parseInt(await ask("Quality (1-100)", config.quality), 10)
@@ -32,9 +31,9 @@ export async function configure() {
     config.resize = null
   }
 
-  await saveConfig(config)
+  const savedPath = await saveConfig(config, { forceLocal })
   console.log()
-  success(`Saved to ${CONFIG_FILE}`)
+  success(`Saved to ${savedPath}`)
   info(JSON.stringify(config, null, 2))
   console.log()
 

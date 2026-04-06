@@ -4,7 +4,7 @@
 
 Batch image conversion and compression CLI powered by [Sharp](https://sharp.pixelplumbing.com/).
 
-## Install
+## Installation
 
 ```bash
 npm install -g sharp-converter
@@ -18,8 +18,6 @@ sharpc -c                      # interactive configuration wizard
 sharpc -i photos/ -o dist/     # custom input/output directories
 sharpc --clean                 # clear output before converting
 ```
-
-## Configuration
 
 Run `sharpc -c` to create a `.sharpc.json` in the current directory:
 

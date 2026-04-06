@@ -73,5 +73,5 @@ export async function convert({ input, output, clean }) {
     console.log(`  ${file} → ${baseName}.${config.format}  ${size}kb  (${ratio}% smaller)`)
   }
 
-  console.log("  Done!")
+  process.exit(0)
 }
