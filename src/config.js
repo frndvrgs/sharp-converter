@@ -3,7 +3,7 @@ import { existsSync, mkdirSync } from "node:fs"
 import path from "node:path"
 import os from "node:os"
 
-const LOCAL_CONFIG = ".sharpc.json"
+const LOCAL_CONFIG = "sharpc.json"
 const GLOBAL_CONFIG = path.join(os.homedir(), ".config", "sharp-converter", "sharpc.json")
 
 const DEFAULTS = {

@@ -25,7 +25,7 @@ if (values.help) {
 
   Usage:
     sharpc                     convert images using config or defaults
-    sharpc init                create .sharpc.json in current directory
+    sharpc init                create sharpc.json in current directory
     sharpc -c                  interactive configuration wizard
     sharpc -i <dir> -o <dir>   specify input/output directories
     sharpc --clean             clear output directory before converting
@@ -38,7 +38,7 @@ if (values.help) {
     -h, --help      show this help
 
   Config resolution:
-    1. .sharpc.json in current directory
+    1. sharpc.json in current directory
     2. ~/.config/sharp-converter/sharpc.json
     3. built-in defaults
 `)

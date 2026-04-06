@@ -14,7 +14,7 @@ npm install -g sharp-converter
 
 ```bash
 sharpc                         # convert using config or defaults
-sharpc init                    # create .sharpc.json in current directory
+sharpc init                    # create sharpc.json in current directory
 sharpc -c                      # interactive configuration wizard
 sharpc -i photos/ -o dist/     # custom input/output directories
 sharpc --clean                 # clear output before converting
@@ -22,10 +22,10 @@ sharpc --clean                 # clear output before converting
 
 ## Configuration
 
-Run `sharpc init` to create a local `.sharpc.json`, or `sharpc -c` to configure interactively.
+Run `sharpc init` to create a local `sharpc.json`, or `sharpc -c` to configure interactively.
 
 Config resolution order:
-1. `.sharpc.json` in current directory
+1. `sharpc.json` in current directory
 2. `~/.config/sharp-converter/sharpc.json`
 3. Built-in defaults (webp, quality 80, no resize)
 
