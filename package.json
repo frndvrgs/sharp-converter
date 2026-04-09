@@ -1,9 +1,10 @@
 {
   "name": "sharp-converter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Batch image conversion and compression CLI powered by Sharp",
   "license": "MIT",
   "author": "frndvrgs (https://github.com/frndvrgs)",
+  "homepage": "https://github.com/frndvrgs/sharp-converter",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frndvrgs/sharp-converter.git"
